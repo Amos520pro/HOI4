@@ -3,12 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://Amos520pro.github.io/HEART-NEW4",
+  "homepage": "https://amos520pro.github.io/HEART-NEW4",
   "scripts": {
     "dev:client": "vite --host --port 3000",
     "dev": "pnpm dev:client",
-    "build:client": "vite build",
-    "build": "rm -rf dist && pnpm build:client",
+    "build:client": "vite build --base=/HEART-NEW4/",
+    "build": "rd /s /q dist 2>nul && pnpm build:client",
     "predeploy": "pnpm build",
     "deploy": "gh-pages -d dist"
   },
